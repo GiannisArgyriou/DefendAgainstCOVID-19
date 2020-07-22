@@ -43,6 +43,12 @@ body{
 #smallerSize{
 	font-size: x-small;
 }
+.homeHeading{
+    font-style: italic;
+}
+#mainParagraph{
+    text-align: justify;
+}
 
 .carousel {
     background: aquamarine
@@ -63,6 +69,28 @@ body{
     z-index: +1;
 }
 
+.carousel-caption {
+    color: black;
+    right: 8%;
+    text-align: left;
+    max-width: 300px;
+    left: auto;
+}
+
+#mycarousel {
+    border: 4px double;
+    border-color: #214E6B;
+}
+.card-header {
+    color: yellow!important;
+}
+.card-body {
+    color: #214E6B!important;
+}
+.bg-secondary {
+    background-color: #214E6B!important;
+}
+
 #myTabContent {
 	margin-top: 50px;
 }
@@ -75,6 +103,10 @@ body{
 }
 a {
     color: aquamarine;
+
+}
+a:hover{
+    color: red;
 }
 #copyright{
 	color: yellow;
