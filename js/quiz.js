@@ -72,7 +72,7 @@ function show_Results() {
     }
     else if (score > 2 && score <= 4) {
         advice = "You have some knowledge on COVID-19" + "<br>" + "Be sure to check the  " + 
-        txt_2.link("#") + "page";
+        txt_2.link("#") + " page";
     }
     else if (score == 5) {
         advice = "You are a COVID-19 expert";
