@@ -71,13 +71,8 @@ function show_Results() {
             txt_1.link("#");
     }
     else if (score > 2 && score <= 4) {
-<<<<<<< HEAD:js/script.js
         advice = "You have some knowledge on COVID-19" + "<br>" + "Be sure to check the  " +
             txt_2.link("#") + "page";
-=======
-        advice = "You have some knowledge on COVID-19" + "<br>" + "Be sure to check the  " + 
-        txt_2.link("#") + " page";
->>>>>>> 6995239ce35e6489d0e8f411d520594f2dea9a88:js/quiz.js
     }
     else if (score == 5) {
         advice = "You are a COVID-19 expert";
@@ -86,7 +81,6 @@ function show_Results() {
     document.getElementById("tip").innerHTML = advice;
 
 }
-<<<<<<< HEAD:js/script.js
 // e-shop
 var price = 0;
 var countCap = 0;
