@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Defend Against COVID</title>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- endbuild -->
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="d-flex flex-grow-1">
+            <a class="navbar-brand" href="./index.html"><img src="images/logofinal.png" height="70" width="90"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+
+        </div>
+        <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+                <li class="nav-item">
+                    <a href="#" class="nav-link m-2 menu-item nav-active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link m-2 menu-item">About us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link m-2 menu-item nav-active dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="true"> <span class="nav-label">COVID-19</span> <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Tips</a></li>
+                        <li><a href="#">Quiz</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link m-2 menu-item">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link m-2 menu-item">e-Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link m-2 menu-item">Contact us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="orderModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Make your order </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times</button>
+                </div>
+                <div class="modal-body">
+                    <div class="row row-content">
+                        <div class="col-12 col-md-9">
+                            <form>
+                                <div class="form-group row">
+                                    <label class="col-md-2 col-form-label">Order summary:</label>
+                                    <div class="col-md-10">
+                                        <span id="items"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="firstname" class="col-md-2 col-form-label">First Name</label>
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" id="firstname" name="firstname"
+                                            placeholder="First Name" required>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="lastname" class="col-md-2 col-form-label">Last Name</label>
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" id="lastname" name="lastname"
+                                            placeholder="Last Name" required>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="telnum" class="col-12 col-md-2 col-form-label">Contact Tel.</label>
+                                    <div class="col-7 col-sm-6 col-md-7">
+                                        <input type="text" pattern="\d*" class="form-control" id="telnum" name="telnum"
+                                            placeholder="Tel. number" minlength="10" maxlength="14" required>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="emailid" class="col-md-2 col-form-label">Email</label>
+                                    <div class="col-md-10">
+                                        <input type="email" class="form-control" id="emailid" name="emailid"
+                                            placeholder="Email" required>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="cardid" class="col-md-2 col-form-label">Credit Card No.</label>
+                                    <div class="col-md-10">
+                                        <input type="text" pattern="\d*" class="form-control" id="cardid" name="cardid"
+                                            placeholder="Card Number" minlength="16" maxlength="16" required>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="cardid" class="col-md-2 col-form-label">CVC</label>
+                                    <div class="col-5 col-sm-4 col-md-6">
+                                        <input type="text" pattern="\d*" class="form-control" id="cardid" name="cardid"
+                                            placeholder="Card Number" minlength="3" maxlength="3" required>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="date" class="col-md-2 col-form-label">Date</label>
+                                    <div class="input-group col-12 col-sm-4">
+                                        <input type="month" class="form-control" id="date" min="2020-07" required>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel
+                    </button>
+                    <button type="submit" class="btn btn-primary btn-sm">
+                        Submit
+                    </button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <header class="jumbotron">
+        <div class="row row-header">
+            <div class="col-12 col-sm-7">
+                <h1>Shop</h1>
+            </div>
+            <div class="col-12 col-sm-5 d-flex justify-content-end align-items-center">
+                <i class="fa fa-shopping-cart" style="font-size:30px"> Total Cost: <span id="total"></span></i>
+                <button type="button" onclick="total_items()" class="btn btn-warning btn-sm btn-block noShow"
+                    data-toggle="modal" data-target-custom="#orderModal">Order checkout </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row row-content">
+            <div class="col-lg-4">
+                <div class="thumbnail">
+                    <img src="images/cap.png" class="img-responsive" width="300" height="175">
+                    <div class="caption">
+                        <div class="row">
+                            <div class="col-6">
+                                <h3>Cap</h3>
+                            </div>
+                            <div class="col-6 price">
+                                <h3>
+                                    <label>$9.99</label></h3>
+                            </div>
+                        </div>
+                        <p>Unisex, fits all sizes</p>
+                        <div class="row ">
+                            <div class="col-md-5">
+                                <button id="btn1" onclick="total_price1()"
+                                    class="btn btn-success btn-product glyphicon glyphicon-shopping-cart">Add to
+                                    cart</button>
+                            </div>
+                            Total: <span id="noCaps"></span>
+                            <div class="col-md-5">
+                                <button id="rmv1" onclick="remove_caps()"
+                                    class="btn btn-danger btn-product glyphicon glyphicon-remove">Remove</button>
+                            </div>
+                        </div>
+
+                        <p> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="thumbnail">
+                    <img src="images/mask.png" class="img-responsive" width="300" height="175">
+                    <div class="caption">
+                        <div class="row">
+                            <div class="col-6">
+                                <h3>Mask</h3>
+                            </div>
+                            <div class="col-6 price">
+                                <h3>
+                                    <label>$4.99</label></h3>
+                            </div>
+                        </div>
+                        <p> A pack of 20 surgical masks</p>
+                        <div class="row">
+                            <div class="col-md-5">
+                                <button id="btn2" onclick="total_price2()"
+                                    class="btn btn-success btn-product glyphicon glyphicon-shopping-cart">Add to
+                                    cart</button>
+                            </div>
+                            Total: <span id="noMasks"></span>
+                            <div class="col-md-5">
+                                <button id="rmv2" onclick="remove_masks()"
+                                    class="btn btn-danger btn-product glyphicon glyphicon-remove">Remove</button>
+                            </div>
+                        </div>
+                        <p> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="thumbnail">
+                    <img src="images/mug.png" class="img-responsive" width="200" height="175">
+                    <div class="caption">
+                        <div class="row">
+                            <div class="col-6">
+                                <h3>Mug</h3>
+                            </div>
+                            <div class="col-6 price">
+                                <h3>
+                                    <label>$7.99</label></h3>
+                            </div>
+                        </div>
+                        <p>An everyday reminder</p>
+                        <div class="row">
+                            <div class="col-md-5">
+                                <button id="btn3" onclick="total_price3()"
+                                    class="btn btn-success btn-product glyphicon glyphicon-shopping-cart">Add to
+                                    cart</button>
+                            </div>
+                            Total: <span id="noMugs"></span>
+                            <div class="col-md-5">
+                                <button id="rmv3" onclick="remove_mugs()"
+                                    class="btn btn-danger btn-product glyphicon glyphicon-remove">Remove</button>
+                            </div>
+                        </div>
+                        <p> </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <footer class="footer">
+        <div class="row">
+            <div class="col-2 offset-1 d-none d-lg-block">
+                <img src="images/merchlogo.png" alt="Alternate logo" width="80" height="80">
+                <h6> Created by:</h6>
+                <ul class="list-unstyled" id="smallerSize">
+                    <li> &nbsp; Argyriou Ioannis</li>
+                    <li> &nbsp; Athanasakopoulou Konstantina</li>
+                    <li> &nbsp; Kanavedatsou Xanthippi</li>
+                    <li> &nbsp; Rzezwicki Piotr</li>
+                </ul>
+            </div>
+            <div class="col-3 col-xs-4">
+                <h5>Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="https://eody.gov.gr/en/" target="_blank">National Public Health
+                            Organization</a></li>
+                    <li><a href="https://www.moh.gov.gr/" target="_blank">Ministry of Health</a></li>
+                    <li><a href="https://www.who.int/" target="_blank">World Health Organization</a></li>
+                    <li><a href="https://www.ecdc.europa.eu/en/geographical-distribution-2019-ncov-cases"
+                            target="_blank">ECDC</a></li>
+                </ul>
+            </div>
+            <div class="col-3 col-xs-4">
+                <h5>Contact us</h5>
+                <address>
+                    Odos Ygeias 72<br>
+                    Athens, City Center<br>
+                    GREECE<br>
+                    <i class="fa fa-phone fa-lg"></i> Tel.: 210 34 56 789<br>
+                    <i class="fa fa-envelope fa-lg"></i> Email: <a
+                        href="mailto:defendagainstcovid@nomail.net">defendagainstcovid@nomail.net</a>
+                </address>
+            </div>
+            <div class="col-auto">
+                <h5>Sign up to our newsletter</h5>
+                <br>
+                <input type="email" id="email" name="email" placeholder="Enter your email here">
+                <br>
+                <button type="button" class="btn btn-info">Subscribe</button>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <p id="copyright"> &copy; Copyright 2020 Defend Against COVID-19</p>
+            </div>
+        </div>
+    </footer>
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/tether/dist/js/tether.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>

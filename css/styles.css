@@ -90,7 +90,11 @@ body{
 .bg-secondary {
     background-color: #214E6B!important;
 }
-
+.modal-content{
+    color: #214e6b!important;
+    background-color: cornsilk!important;
+    opacity: 0.95;
+}
 #myTabContent {
 	margin-top: 50px;
 }
@@ -196,4 +200,7 @@ p{
 #tip {
     color: white;
     background-color: #214e6b;
+}
+.btn-product{
+	width: 100%;
 }
