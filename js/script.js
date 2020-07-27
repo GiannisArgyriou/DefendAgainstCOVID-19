@@ -7,7 +7,7 @@ $(document).ready(function(){
         $("#mycarousel").carousel('cycle');
     });
 });
-
+//quiz
 var i = 0;
 
 var user_a = [];
@@ -179,6 +179,7 @@ if(mm<10){
 today = yyyy+'-'+mm;
 document.getElementById("date").setAttribute("min", today);
 
+//tips
 var tip = " "
 function random_tip() {
     let x = Math.floor(Math.random() * 5);
