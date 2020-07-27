@@ -842,3 +842,6 @@ section .section-title{
 	-moz-transition: .5s all ease;
 	transition: .5s all ease;
 }
+.redLink {
+  color: white;
+}
