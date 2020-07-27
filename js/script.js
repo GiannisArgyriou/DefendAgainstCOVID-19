@@ -103,7 +103,7 @@ function show_Results() {
 
     if (score >= 0 && score <= 2) {
         advice = "You should get more informed about COVID-19" + "<br>" + "You can read more information about the virus on the " +
-            txt_1.link("#");
+            txt_1.link("index.html");
     }
     else if (score > 2 && score <= 4) {
         advice = "You have some knowledge on COVID-19" + "<br>" + "Be sure to check the  " +
