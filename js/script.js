@@ -14,7 +14,7 @@ $.fn.jQuerySimpleCounter = function( options ) {
         end:    100,
         easing: 'swing',
         duration: 400,
-        complete: ''
+        compvare: ''
     }, options );
     var thisElement = $(this);
     $({count: settings.start}).animate({count: settings.end}, {
@@ -175,7 +175,7 @@ function total_cost() {
     
 }
 function total_items() {
-    let summary = " ";
+    var summary = " ";
     target = $(".noShow").attr('data-target-custom');
     if (countCap == 0 && countMask == 0 && countMug == 0) {
         alert("Your cart is empty!")
@@ -207,7 +207,7 @@ document.getElementById("date").setAttribute("min", today);
 //tips
 var tip = " "
 function random_tip() {
-    let x = Math.floor(Math.random() * 5);
+    var x = Math.floor(Math.random() * 5);
     if (x == 0) {
         tip = "... you can wash your hands to the tune of 'Happy Birthday', which should last for about 20 seconds?"
     }
