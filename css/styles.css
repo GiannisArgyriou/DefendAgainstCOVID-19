@@ -78,7 +78,7 @@ body{
 }
 
 #mycarousel {
-    border: 4px double;
+    border: 6px solid;
     border-color: #214E6B;
 }
 .card-header {
@@ -111,6 +111,9 @@ a {
 }
 a:hover{
     color: red;
+}
+#newslink {
+    color: black;
 }
 #copyright{
 	color: yellow;

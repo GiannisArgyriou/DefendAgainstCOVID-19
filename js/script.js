@@ -1,3 +1,13 @@
+$(document).ready(function(){
+    $("#mycarousel").carousel( { interval: 4000 } );
+    $("#carousel-pause").click(function(){
+        $("#mycarousel").carousel('pause');
+    });
+    $("#carousel-play").click(function(){
+        $("#mycarousel").carousel('cycle');
+    });
+});
+
 var i = 0;
 
 var user_a = [];
