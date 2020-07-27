@@ -167,5 +167,25 @@ if(mm<10){
     mm='0'+mm
 } 
 today = yyyy+'-'+mm;
-document.getElementById("date").setAttribute("min", today)
-console.log(today);
+document.getElementById("date").setAttribute("min", today);
+
+var tip = " "
+function random_tip() {
+    let x = Math.floor(Math.random() * 5);
+    if (x == 0) {
+        tip = "... you can wash your hands to the tune of 'Happy Birthday', which should last for about 20 seconds?"
+    }
+    if (x == 1) {
+        tip = "... we still don't know for certain how COVID-19 has been spread to people. One of the theories links it to the pangolins."
+    }
+    if (x == 2) {
+        tip = "... as of 27.07.2020, there have been no pronounced deaths due to COVID-19 on Faroe Islands, despite of 191 confirmed cases"
+    }
+    if (x == 3) {
+        tip = "... Sweden seems to be the only 'major' country whose strategy has relied more (despite some restrictions such as banning all public gatherings and events with more than 50 people) on voluntary social distancing rather than top-down, governmental restrictions"
+    }
+    if (x == 4) {
+        tip = "... at the end of May, the Cypriot government has announced covering the costs of accommodation, medicine and food for tourists who will test positive for the virus after travelling there"
+    }
+    document.getElementById("randomTip").innerHTML = tip;
+}

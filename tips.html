@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Defend Against COVID</title>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- endbuild -->
+</head>
+
+<body onload="random_tip()">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="d-flex flex-grow-1">
+            <a class="navbar-brand" href="./index.html"><img src="images/logofinal.png" height="70" width="90"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+
+        </div>
+        <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+                <li class="nav-item">
+                    <a href="#" class="nav-link m-2 menu-item nav-active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link m-2 menu-item">About us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link m-2 menu-item nav-active dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="true"> <span class="nav-label">COVID-19</span> <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Tips</a></li>
+                        <li><a href="#">Quiz</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link m-2 menu-item">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link m-2 menu-item">e-Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link m-2 menu-item">Contact us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header class="jumbotron">
+        <div class="row row-header">
+            <div class="col-12 col-sm-6 d-flex align-items-center">
+                <h2>Did you know that...</h2>
+            </div>
+            <div class="col-12 col-sm-6 d-flex align-items-center">
+                <span id="randomTip"> </span>
+            </div>
+
+        </div>
+    </header>
+
+
+    <div class="container">
+        <div class="how-section1">
+            <div class="row">
+                <div class="col-md-6 how-img">
+                    <img src="images/distance.png"
+                        class="rounded-circle img-fluid" alt="" />
+                </div>
+                <div class="col-md-6">
+                    <h4>Maintain a safe distance</h4>
+                    <h4 class="subheading"> Make sure to always maintain a distance of at least two metres between yourself and other people. 
+                        This includes social meetings with friends and peers, professional meetings with colleagues, entries to public spaces
+                    and transport, visits to the local shop etc. You should also try to limit any social gatherings in these tough times, 
+                    but protecting yourself will keep you safe.</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Clean your hands frequently</h4>
+                    <h4 class="subheading">Clean your hands regularly, especially after touching any items or surfaces. 
+                        Wash your hands with soap and water, and dry them thoroughly.
+                        Use alcohol-based handrub if you don’t have immediate access to soap and water. 
+                        The whole process should last for at least 20 seconds.
+                    </h4>
+                </div>
+                <div class="col-md-6 how-img">
+                    <img src="images/washHands.jpg"
+                        class="rounded-circle img-fluid" alt="" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 how-img">
+                    <img src="images/masksGloves.jpg"
+                        class="rounded-circle img-fluid" alt="" />
+                </div>
+                <div class="col-md-6">
+                    <h4>Wear a mask and gloves.</h4>
+                    <h4 class="subheading"> Whenever you have to go outside of your house, especially to an indoors place,
+                        you should make sure that you are wearing a mask and ideally gloves as well. While these two items
+                        cannot stop the virus on their own, they can still contain the spread, protecting your skin from immediate
+                        contact with it.
+                    </h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Avoid touching your face</h4>
+                    <h4 class="subheading">As it was mentioned before, masks and gloves can help against COVID-19, but they cannot
+                        stop the virus on their own. One more thing that you need to keep in mind is that you should not be touching
+                        your face, even if you're wearing a mask. 
+                    </h4>
+                </div>
+                <div class="col-md-6 how-img">
+                    <img src="images/face.png"
+                        class="rounded-circle img-fluid" alt="" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <iframe width="400" height="200" src="https://www.youtube.com/embed/JC7JnSkeyLM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="400" height="200" src="https://www.youtube.com/embed/adB8RW4I3o4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="row">
+            <div class="col-2 offset-1 d-none d-lg-block">
+                <img src="images/merchlogo.png" alt="Alternate logo" width="80" height="80">
+                <h6> Created by:</h6>
+                <ul class="list-unstyled" id="smallerSize">
+                    <li> &nbsp; Argyriou Ioannis</li>
+                    <li> &nbsp; Athanasakopoulou Konstantina</li>
+                    <li> &nbsp; Kanavedatsou Xanthippi</li>
+                    <li> &nbsp; Rzezwicki Piotr</li>
+                </ul>
+            </div>
+            <div class="col-3 col-xs-4">
+                <h5>Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="https://eody.gov.gr/en/" target="_blank">National Public Health Organization</a></li>
+                    <li><a href="https://www.moh.gov.gr/" target="_blank">Ministry of Health</a></li>
+                    <li><a href="https://www.who.int/" target="_blank">World Health Organization</a></li>
+                    <li><a href="https://www.ecdc.europa.eu/en/geographical-distribution-2019-ncov-cases"
+                            target="_blank">ECDC</a></li>
+                </ul>
+            </div>
+            <div class="col-3 col-xs-4">
+                <h5>Contact us</h5>
+                <address>
+                    Odos Ygeias 72<br>
+                    Athens, City Center<br>
+                    GREECE<br>
+                    <i class="fa fa-phone fa-lg"></i> Tel.: 210 34 56 789<br>
+                    <i class="fa fa-envelope fa-lg"></i> Email: <a
+                        href="mailto:defendagainstcovid@nomail.net">defendagainstcovid@nomail.net</a>
+                </address>
+            </div>
+            <div class="col-auto">
+                <h5>Sign up to our newsletter</h5>
+                <br>
+                <input type="email" id="email" name="email" placeholder="Enter your email here">
+                <br>
+                <button type="button" class="btn btn-info">Subscribe</button>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <p id="copyright"> &copy; Copyright 2020 Defend Against COVID-19</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/tether/dist/js/tether.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
