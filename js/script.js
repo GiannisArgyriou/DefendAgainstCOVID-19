@@ -14,7 +14,7 @@ $.fn.jQuerySimpleCounter = function( options ) {
         end:    100,
         easing: 'swing',
         duration: 400,
-        compvare: ''
+        complete: ''
     }, options );
     var thisElement = $(this);
     $({count: settings.start}).animate({count: settings.end}, {
@@ -102,11 +102,11 @@ function show_Results() {
     document.getElementById("final_score").innerHTML = "You sumbitted " + score + " correct answers";
 
     if (score >= 0 && score <= 2) {
-        advice = "You should get more informed about COVID-19" + "<br>" + "You can read more information about the virus on the " +
+        advice = "You should get more informed about COVID-19" + "<br><br>" + "You can read more information about the virus on the " +
             txt_1.link("index.html");
     }
     else if (score > 2 && score <= 4) {
-        advice = "You have some knowledge on COVID-19" + "<br>" + "Be sure to check the  " +
+        advice = "You have some knowledge on COVID-19" + "<br><br>" + "Be sure to check the  " +
             txt_2.link("tips.html") + " page";
     }
     else if (score == 5) {

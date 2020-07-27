@@ -205,6 +205,10 @@ p{
     color: white;
     background-color: #214e6b;
 }
+#tip a{
+  color: aquamarine;
+}
+
 .btn-product{
     width: 100%;
 }

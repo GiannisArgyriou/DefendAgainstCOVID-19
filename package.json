@@ -1,7 +1,7 @@
 {
   "name": "defendagainstcovid19",
   "version": "1.0.0",
-  "description": "This is a website for Defend Against COVID-19",
+  "description": "This is a website for COVID-19",
   "main": "index.html",
   "scripts": {
     "start": "npm run lite",
@@ -10,7 +10,7 @@
     "clean": "rimraf dist",
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
     "imagemin": "imagemin images/* -o dist/images",
-    "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin faq.html -d dist --htmlmin -o dist/faq.html && usemin news.html -d dist --htmlmin -o dist/news.html && usemin privacypolicy.html -d dist --htmlmin -o dist/privacypolicy.html && usemin quiz.html -d dist --htmlmin -o dist/quiz.html && usemin shop.html -d dist --htmlmin -o dist/shop.html && usemin termsandconditions.html -d dist --htmlmin -o dist/termsandconditions.html && usemin tips.html -d dist --htmlmin -o dist/tips.html && usemin index.html -d dist --htmlmin -o dist/index.html",
+    "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin news.html -d dist --htmlmin -o dist/news.html && usemin faq.html -d dist --htmlmin -o dist/faq.html && usemin privacypolicy.html -d dist --htmlmin -o dist/privacypolicy.html && usemin quiz.html -d dist --htmlmin -o dist/quiz.html && usemin shop.html -d dist --htmlmin -o dist/shop.html && usemin tips.html -d dist --htmlmin -o dist/tips.html && usemin termsandconditions.html -d dist --htmlmin -o dist/termsandconditions.html && usemin index.html -d dist --htmlmin -o dist/index.html",
     "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
   },
   "author": "",
